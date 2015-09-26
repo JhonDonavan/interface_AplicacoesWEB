@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/estilo3.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css' />
+	<script src="../js/arquivo.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+		
+			<div class="logo">
+			<h1>nome sistema</h1>
+			</div>
+			<nav class="navegacao-horizontal">
+				<div class="ul-horizontal">
+					<ul class="inline sem-marcador">
+						<li><a href="">Area de clientes</a></li>
+						<li><a href="">area de fornecedores</a></li>
+						<li><a href="">sair</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		</header>
+			
+			<aside>
+				<nav class="navegacao-lateral">
+					<ul class="sem-marcador">
+						<li><a href="">Area de clientes</a></li>
+						<li><a href="">area de fornecedores</a></li>
+						<li><a href="">area de produtos</a></li>
+						<li><a href="">area de funcionarios</a></li>
+						<li><a href="">area de pagamentos</a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</nav>
+			</aside>
+		<section>
+			
+				<br>
+				<h2>cadastro de clientes</h2>
+				
+				<br>
+				
+				<div class="form">
+					<form action="#" method="post" onsubmit="return validar()">
+						<table>
+							<tr>
+								<td><label>CPF:</label></td>
+								<td><input type="text" name="cpf" size="10" maxlength="10"/></td>
+							</tr>
+							<tr>
+								<td><label>Nome:</label></td>
+								<td><input type="text" name="nome" size="10" maxlength="15"/></td>
+							</tr>
+							<tr>
+								<td><label>Sobre nome:</label></td>
+								<td><input type="text" name="sobrenome" size="10" maxlength="10"/></td>
+							</tr>
+													
+							<tr>
+								<td><label>Ano de nascimento:</label></td>
+								<td><input type="text" name="data_nasc" size="10" maxlength="10"/></td>
+							</tr>
+							<tr>
+								<td><label>Telefone:</label></td>
+								<td><input type="text" name="tel" size="10" maxlength="10"/></td>
+							</tr>
+							<tr>
+								<td><label>Endereço:</label></td>
+								<td><input type="text" name="end" size="10" maxlength="10"/></td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td><input type="submit" value="Enviar" /></td>
+								<td><input type="button" value="Limpar"  onClick="limpa()"/></td>
+							</tr>
+						</table>
+								
+								
+					</form>
+				</div>
+			
+		</section>
+		
+			<footer>
+				<p>TODOS OS DIREITOS RESERVADOS</p>
+			</footer>
+			
+		
+	</div>
+		
+</body>
+
+</html>
