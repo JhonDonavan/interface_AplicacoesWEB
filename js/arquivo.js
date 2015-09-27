@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script  type="text/javascript">
 function validar()
 {
 	var f = document.forms[0];

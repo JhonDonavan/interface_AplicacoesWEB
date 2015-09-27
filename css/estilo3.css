@@ -2,6 +2,9 @@
 	margin: 0px 0px;
 	padding: 0px 1px;
 }
+hr{
+	border: 1px solid;
+}
 body{
 	font-family: 'roboto', sans-serif;
 	color:#333;
@@ -13,7 +16,7 @@ body{
 }
 
 header{
-background-color: blue;
+background-color: #F0F0F0;
 width: 100%;
 height: 45px;
 margin: 4px 0px;
@@ -21,13 +24,14 @@ padding: 0px 0px;
 box-shadow: 2px -1px 2px black;
 border-left: 1px solid black;
 border-radius: 10px;
+border-bottom: 2px solid black;
 }
 .corpo{
 	
 }
 aside{
-background-color: red;
-width: 250px;
+background-color: #F0F0F0 ;
+width: 248px;
 height: 563px;
 float: left;
 margin: 0px 0px;
@@ -36,11 +40,12 @@ overflow: auto;
 border-radius: 10px;
 margin-bottom: 3px;
 box-shadow: 2px -1px 2px black;
+border-left: 2px solid black;
 margin-right: 5px;
 
 }
 section{
-background-color: #c0c0c0;
+background-color: #E0E0E0;
 width: 705px;
 height: 563px;
 float: right;
@@ -87,7 +92,7 @@ ul{
 }
 li{
 	margin: 3px;
-	background-color: #4169E1 ;
+	background-color: #C0C0C0 ;
 	padding: 5px 10px;
 	text-transform: uppercase;
 	border-radius: 10px;

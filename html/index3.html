@@ -3,7 +3,7 @@
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="../css/estilo3.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css' />
-	<script src="../js/arquivo.js"></script>
+	<script src="../js/js.js"></script>
 </head>
 
 <body>
@@ -28,12 +28,15 @@
 			<aside>
 				<nav class="navegacao-lateral">
 					<ul class="sem-marcador">
-						<li><a href="">Area de clientes</a></li>
-						<li><a href="">area de fornecedores</a></li>
-						<li><a href="">area de produtos</a></li>
-						<li><a href="">area de funcionarios</a></li>
-						<li><a href="">area de pagamentos</a></li>
-						<li><a href=""></a></li>
+						<li><a href="">Area de clientes</a></li><br>
+						<li><a href="">area de fornecedores</a></li><br>
+						<li><a href="">area de produtos</a></li><br>
+						<li><a href="">area de funcionarios</a></li><br>
+						<li><a href="">area de pagamentos</a></li><br>
+						<br>
+						<hr>
+						<br>
+						<li><a href="">Gerenciar usuarios do sistema</a></li>
 					</ul>
 				</nav>
 			</aside>
@@ -48,35 +51,36 @@
 					<form action="#" method="post" onsubmit="return validar()">
 						<table>
 							<tr>
-								<td><label>CPF:</label></td>
-								<td><input type="text" name="cpf" size="10" maxlength="10"/></td>
+								<td><label for="cpf">CPF:</label></td>
+								<td><input type="text" name="cpf" id="cpf" size="10" maxlength="10"/></td>
 							</tr>
 							<tr>
-								<td><label>Nome:</label></td>
-								<td><input type="text" name="nome" size="10" maxlength="15"/></td>
+								<td><label for="nome">Nome:</label></td>
+								<td><input type="text" name="nome" id="nome" size="10" maxlength="15"/></td>
 							</tr>
 							<tr>
-								<td><label>Sobre nome:</label></td>
-								<td><input type="text" name="sobrenome" size="10" maxlength="10"/></td>
+								<td><label for="sobrenome">Sobre nome:</label></td>
+								<td><input type="text" name="sobrenome" id="sobrenome" size="10" maxlength="10"/></td>
 							</tr>
 													
 							<tr>
-								<td><label>Ano de nascimento:</label></td>
-								<td><input type="text" name="data_nasc" size="10" maxlength="10"/></td>
+								<td><label for="data_nascimento">Ano de nascimento:</label></td>
+								<td><input type="text" name="data_nasc" id="data_nascimento" size="10" maxlength="10"/></td>
 							</tr>
 							<tr>
-								<td><label>Telefone:</label></td>
-								<td><input type="text" name="tel" size="10" maxlength="10"/></td>
+								<td><label for="telefone">Telefone:</label></td>
+								<td><input type="text" name="tel" id="telefone" size="10" maxlength="10"/></td>
 							</tr>
 							<tr>
-								<td><label>Endereço:</label></td>
-								<td><input type="text" name="end" size="10" maxlength="10"/></td>
+								<td><label for="endereço">Endereço:</label></td>
+								<td><input type="text" name="end" id="endereço" size="10" maxlength="10"/></td>
 							</tr>
 							<tr>
 								<td>
 								</td>
-								<td><input type="submit" value="Enviar" /></td>
-								<td><input type="button" value="Limpar"  onClick="limpa()"/></td>
+								<td><input type="submit" value="Enviar" />&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="button" value="Limpar"  onClick="limpa()"/></td>
+								
 							</tr>
 						</table>
 								

@@ -1,10 +1,10 @@
-<script type="text/javascript">
+<script  type="text/javascript">
 function validar()
 {
 	var f = document.forms[0];
 	if (f.nome.value == '')
 	{
-		alert('O campo NOME n„o foi preenchido.');
+		alert('O campo NOME n√£o foi preenchido.');
 		f.nome.focus();
 		//f.nome.setbackground(Color.RED);
 		//<campo>.setForeground(Color.RED); 
@@ -12,13 +12,13 @@ function validar()
 	}
 	else if(f.sobrenome.value == '')
 		{
-		alert('O campo sobre nome n„o foi preenchido');
+		alert('O campo sobre nome n√£o foi preenchido');
 		f.sobrenome.focus();
 		return false;
 		}
 	else if (f.cpf.value == '')
 	{
-		alert('O campo CPF n„o foi preenchido.');
+		alert('O campo CPF n√£o foi preenchido.');
 		f.cpf.focus();
 		return false;
 	}
