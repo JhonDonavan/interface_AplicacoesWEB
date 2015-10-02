@@ -53,33 +53,56 @@
 				<br>
 				
 				<div class="form">
-					<form action=" 	" method="post" onsubmit="return validar()">
+					<form action=" 	" method="post" onsubmit="return validar_campos(); validarCPF(cpf)">
 						<table>
 							<tr>
 								<td><label for="cpf">CPF:</label></td>
-								<td><input type="text" name="cpf" id="cpf" size="10" maxlength="10"/></td>
+								<td><input type="text" name="cpf" id="cpf" onkeypress="mascara(this, '###.###.###-##')" size="15" maxlength="14"/></td>
 							</tr>
+							
+							<tr>
+							</tr>
+							
 							<tr>
 								<td><label for="nome">Nome:</label></td>
-								<td><input type="text" name="nome" id="nome" size="10" maxlength="15"/></td>
+								<td><input type="text" name="nome" id="nome" size="15" maxlength="15"/></td>
 							</tr>
+							
+							<tr>
+							</tr>
+							
 							<tr>
 								<td><label for="sobrenome">Sobre nome:</label></td>
-								<td><input type="text" name="sobrenome" id="sobrenome" size="10" maxlength="10"/></td>
+								<td><input type="text" name="sobrenome" id="sobrenome" size="15" maxlength="10"/></td>
+							</tr>
+							
+							<tr>
 							</tr>
 													
 							<tr>
 								<td><label for="data_nascimento">Ano de nascimento:</label></td>
-								<td><input type="text" name="data_nasc" id="data_nascimento" size="10" maxlength="10"/></td>
+								<td><input type="text" name="data_nasc" id="data_nascimento" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="10"/></td>
 							</tr>
+							
 							<tr>
-								<td><label for="telefone">Telefone:</label></td>
-								<td><input type="text" name="tel" id="telefone" size="10" maxlength="10"/></td>
 							</tr>
+							
+							<tr>
+								<td><label for="telefone">Telefone celular:</label></td>
+								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+							
 							<tr>
 								<td><label for="endereço">Endereço:</label></td>
-								<td><input type="text" name="end" id="endereço" size="10" maxlength="10"/></td>
+								<td><input type="text" name="end" id="endereço" size="30" maxlength="60"/></td>
 							</tr>
+							
+							<tr>
+							</tr>
+							
 							<tr>
 								<td>
 								</td>
