@@ -1,4 +1,4 @@
-<script  type="text/javascript">
+<script  type="text/javaScript">
 function validar()
 {
 	var f = document.forms[0];
@@ -6,8 +6,6 @@ function validar()
 	{
 		alert('O campo NOME não foi preenchido.');
 		f.nome.focus();
-		//f.nome.setbackground(Color.RED);
-		//<campo>.setForeground(Color.RED); 
 		return false;
 	}
 	else if(f.sobrenome.value == '')
