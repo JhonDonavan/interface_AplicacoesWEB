@@ -1,17 +1,4 @@
-function mascara(t, mascara){
- //var i = t.value.length;
- var saida = mascara.substring(1,0);
- var texto = mascara.substring(t.value.length);
- if (texto.substring(0,1) != saida){
- t.value += texto.substring(0,1);
-	}
- }
- 
- function somente_numeros(document.form.cpf.value);
-	car f = document.form.cpf.value;
-	
-	if(document.form.cpf.value == )
- 
+
 
 function validar_campos()
 {

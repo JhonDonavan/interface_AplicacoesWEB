@@ -10,31 +10,30 @@
 
 <body>
 
-
-
 	<div class="wrapper">
 		<header>
-		
 			<div class="logo">
 			<h1>nome sistema</h1>
 			</div>
 			<nav class="navegacao-horizontal">
 				<div class="ul-horizontal">
 					<ul class="inline sem-marcador">
-						<li><a href="">Area de clientes</a></li>
-						<li><a href="">area de fornecedores</a></li>
+						<li><a href="">clientes</a></li>
+						<li><a href="">fornecedores</a></li>
+						<li><a href="">produtos</a></li>
+						<li><a href="">funcionarios</a></li>
+						<li><a href="">pagamentos</a></li>
 						<li><a href="">sair</a></li>
 					</ul>
 				</div>
 			</nav>
-		
 		</header>
 			
-			<aside>
+			<!--<aside>
 				<nav class="navegacao-lateral">
-					<ul class="sem-marcador">
-						<li><a href="">Area de clientes</a></li><br>
-						<li><a href="">area de fornecedores</a></li><br>
+					<ul class="sem-marcador">											OBS
+						<li><a href="">Area de clientes</a></li><br>			removido  menu lateral
+						<li><a href="">area de fornecedores</a></li><br>		menu será no topo no head
 						<li><a href="">area de produtos</a></li><br>
 						<li><a href="">area de funcionarios</a></li><br>
 						<li><a href="">area de pagamentos</a></li><br>
@@ -44,27 +43,27 @@
 						<li><a href="">Gerenciar usuarios do sistema</a></li>
 					</ul>
 				</nav>
-			</aside>
+			</aside>-->
+		<div class="center">
 		<section>
-			
-				<br>
-				<h2>cadastro de clientes</h2>
-				
 				<br>
 				
-				<div class="form">
-					<form action=" 	" method="post" onsubmit="return validar_campos(); validarCPF(cpf)">
+				<br>
+		<div class="form">
+			<form action="#" method="post" onsubmit="return validar_campos(); validarCPF(cpf) class="form">
+				<fieldset>
+					<legend>Dados do clientes</legend>
 						<table>
 							<tr>
-								<td><label for="cpf">CPF:</label></td>
-								<td><input type="text" name="cpf" id="cpf" onkeypress="mascara(this, '###.###.###-##')" size="15" maxlength="14"/></td>
+								<td class="esquerda"><label for="cpf">CPF:</label></td>
+								<td><input type="text" name="cpf" id="cpf" onkeyup="mascaraCPF(this)" size="15" maxlength="14"/></td>
 							</tr>
 							
 							<tr>
 							</tr>
 							
 							<tr>
-								<td><label for="nome">Nome:</label></td>
+								<td class="esquerda"><label for="nome">Nome:</label></td>
 								<td><input type="text" name="nome" id="nome" size="15" maxlength="15"/></td>
 							</tr>
 							
@@ -72,7 +71,7 @@
 							</tr>
 							
 							<tr>
-								<td><label for="sobrenome">Sobre nome:</label></td>
+								<td class="esquerda"><label for="sobrenome">Sobre nome:</label></td>
 								<td><input type="text" name="sobrenome" id="sobrenome" size="15" maxlength="10"/></td>
 							</tr>
 							
@@ -80,7 +79,7 @@
 							</tr>
 													
 							<tr>
-								<td><label for="data_nascimento">Ano de nascimento:</label></td>
+								<td class="esquerda"><label for="data_nascimento">Ano de nascimento:</label></td>
 								<td><input type="text" name="data_nasc" id="data_nascimento" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="10"/></td>
 							</tr>
 							
@@ -88,15 +87,15 @@
 							</tr>
 							
 							<tr>
-								<td><label for="telefone">Telefone celular:</label></td>
+								<td class="esquerda"><label for="telefone">Telefone celular:</label></td>
 								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
 							</tr>
 							
 							<tr>
 							</tr>
 							
-							<tr>
-								<td><label for="endereço">Endereço:</label></td>
+							<!--<tr>
+								<td class="esquerda"><label for="endereço">Endereço:</label></td>
 								<td><input type="text" name="end" id="endereço" size="30" maxlength="60"/></td>
 							</tr>
 							
@@ -109,14 +108,87 @@
 								<td><input type="submit" value="Enviar" />&nbsp;&nbsp;&nbsp;&nbsp;
 								<input type="button" value="Limpar"  onclick="javaScript: limpa()"/></td>
 								
+							</tr>-->
+						</table>
+					
+				</fieldset>		
+								
+				<fieldset>
+				 <legend>Endereço do cliente (Opcional)</legend>
+					<br>
+						<table>
+							<tr>
+								<td class="esquerda"><label for="cpf">CPF:</label></td>
+								<td><input type="text" name="cpf" id="cpf" onkeyup="mascaraCPF(this)" size="15" maxlength="14"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="nome">Nome:</label></td>
+								<td><input type="text" name="nome" id="nome" size="15" maxlength="15"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="sobrenome">Sobre nome:</label></td>
+								<td><input type="text" name="sobrenome" id="sobrenome" size="15" maxlength="10"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+													
+							<tr>
+								<td class="esquerda"><label for="data_nascimento">Ano de nascimento:</label></td>
+								<td><input type="text" name="data_nasc" id="data_nascimento" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="10"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="telefone">Telefone celular:</label></td>
+								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="endereço">Endereço:</label></td>
+								<td><input type="text" name="end" id="endereço" size="30" maxlength="60"/></td>
+							</tr>
+							
+							<tr>
+							</tr>
+							
+							<tr>
+								<td>
+								</td>
 							</tr>
 						</table>
+						
 								
-								
-					</form>
-				</div>
+				</fieldset>	
+				<br><br>
+						<table align=center>
+							<tr>
+								<td>
+								</td>
+								<td><input type="submit" value="Enviar" />&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="button" value="Limpar"  onclick="javaScript: limpa()"/></td>
+							</tr>
+						</table>
+			</form>
+		</div>
+				
 			
 		</section>
+		
+		</div>
 		
 			<footer>
 				<p>TODOS OS DIREITOS RESERVADOS</p>
