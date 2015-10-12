@@ -52,7 +52,7 @@
 		<div class="form">
 			<form action="#" method="post" onsubmit="return validar_campos(); validarCPF(cpf) class="form">
 				<fieldset>
-					<legend>Dados do clientes</legend>
+					<legend>Dados do cliente</legend>
 						<table>
 							<tr>
 								<td class="esquerda"><label for="cpf">CPF:</label></td>
@@ -87,8 +87,13 @@
 							</tr>
 							
 							<tr>
-								<td class="esquerda"><label for="telefone">Telefone celular:</label></td>
-								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+								<td class="esquerda"><label for="telefoneC">Tel celular:</label></td>
+								<td><input type="text" name="tel" id="telefoneC" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="telefoneR">Tel residencial:</label></td>
+								<td><input type="text" name="telefoneR" id="telefoneR" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
 							</tr>
 							
 							<tr>
@@ -117,51 +122,111 @@
 				 <legend>Endereço do cliente (Opcional)</legend>
 					<br>
 						<table>
-							<tr>
-								<td class="esquerda"><label for="cpf">CPF:</label></td>
-								<td><input type="text" name="cpf" id="cpf" onkeyup="mascaraCPF(this)" size="15" maxlength="14"/></td>
+							<!-- <tr>
+								<td class="esquerda"><label for="Tipo">Tipo:</label></td>
+								<td><input type="text" name="Tipo id="Tipo" onkeyup="mascaraCPF(this)" size="10" maxlength="14"/></td>
+								</td>
+								<td>
+								<select name="tipo" id="tipo">
+									<option value="">Selecione</option>
+									<option value="Avenida">Avenida</option>
+									<option value="Alameda">Alameda</option>
+									<option value="trevo">Trevo</option>
+									<option value="Logradouro">logradouro</option>
+									<option value="rua">Rua</option>
+								</select>
+								</td>
+							</tr>-->
 							</tr>
 							
 							<tr>
 							</tr>
 							
 							<tr>
-								<td class="esquerda"><label for="nome">Nome:</label></td>
-								<td><input type="text" name="nome" id="nome" size="15" maxlength="15"/></td>
+								<td class="esquerda"><label for="nome">Endereço:</label></td>
+								<td><input type="text" name="end" id="end" size="15" maxlength="15"/></td>
+								<td>
+								<select name="tipo" id="tipo">
+									<option value="Tipo">Tipo</option>
+									<option value="Avenida">Avenida</option>
+									<option value="Alameda">Alameda</option>
+									<option value="trevo">Trevo</option>
+									<option value="Logradouro">logradouro</option>
+									<option value="rua">Rua</option>
+								</select>
+								</td>
+								<td class="esquerda"><label for="Numero">Numero:</label></td>
+								<td><input type="text" name="Numero" id="Numero" size="5" maxlength="5"/></td>
 							</tr>
 							
 							<tr>
 							</tr>
 							
+							<!--<tr>
+								<td class="esquerda"><label for="Numero">Numero:</label></td>
+								<td><input type="text" name="Numero" id="Numero" size="15" maxlength="10"/></td>
+							</tr>-->
+							
 							<tr>
-								<td class="esquerda"><label for="sobrenome">Sobre nome:</label></td>
-								<td><input type="text" name="sobrenome" id="sobrenome" size="15" maxlength="10"/></td>
+								<td class="esquerda"><label for="cep">CEP:</label></td>
+								<td><input type="text" name="cep" id="cep" size="5" maxlength="5"> - <input type="text" name="cep2" id="cep2" size="3" maxlength="3"></td>
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="complemento">Complemento:</label></td>
+								<td><input type="text" name="complemento" id="complemento" size="15" maxlength="60"/></td>
+								
 							</tr>
 							
 							<tr>
 							</tr>
 													
 							<tr>
-								<td class="esquerda"><label for="data_nascimento">Ano de nascimento:</label></td>
-								<td><input type="text" name="data_nasc" id="data_nascimento" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="10"/></td>
+								<td class="esquerda"><label for="data_nascimento">Bairro:</label></td>
+								<td><input type="text" name="Bairro" id="Bairro" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="25"/></td>
 							</tr>
 							
 							<tr>
 							</tr>
 							
 							<tr>
-								<td class="esquerda"><label for="telefone">Telefone celular:</label></td>
-								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+								<td class="esquerda"><label for="telefone">Cidade:</label></td>
+								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="25"/></td>
+								<td class="esquerda">
+								<select name="UF" id="UF">
+									<option value="">Selecione</option>
+									<option value="AC">AC</option>
+									<option value="AL">AL</option>
+									<option value="AM">AM</option>
+									<option value="AP">AP</option>
+									<option value="BA">BA</option>
+									<option value="CE">CE</option>
+									<option value="DF">DF</option>
+									<option value="ES">ES</option>
+									<option value="GO">GO</option>
+									<option value="MA">MA</option>
+									<option value="MG">MG</option>
+									<option value="MS">MS</option>
+									<option value="MT">MT</option>
+									<option value="PA">PA</option>
+									<option value="PB">PB</option>
+									<option value="PE">PE</option>
+									<option value="PI">PI</option>
+									<option value="PR">PR</option>
+									<option value="RJ" selected>RJ</option>
+									<option value="RN">RN</option>
+									<option value="RS">RS</option>
+									<option value="RO">RO</option>
+									<option value="RR">RR</option>
+									<option value="SC">SC</option>
+									<option value="SE">SE</option>
+									<option value="SP">SP</option>
+									<option value="TO">TO</option>
+								</select>
+								</td>
 							</tr>
 							
-							<tr>
-							</tr>
-							
-							<tr>
-								<td class="esquerda"><label for="endereço">Endereço:</label></td>
-								<td><input type="text" name="end" id="endereço" size="30" maxlength="60"/></td>
-							</tr>
-							
+					
 							<tr>
 							</tr>
 							
@@ -174,14 +239,17 @@
 								
 				</fieldset>	
 				<br><br>
-						<table align=center>
+						<div class="botoes"
+						<table>
 							<tr>
 								<td>
 								</td>
 								<td><input type="submit" value="Enviar" />&nbsp;&nbsp;&nbsp;&nbsp;
-								<input type="button" value="Limpar"  onclick="javaScript: limpa()"/></td>
+								<input type="button" value="Limpar formulário"  onclick="javaScript: limpa()"/></td>&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="button" value="Cancelar"  href="#"/></td>
 							</tr>
 						</table>
+						</div>
 			</form>
 		</div>
 				
