@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8" />
@@ -18,6 +18,8 @@
 			<nav>
 				<div class="ul-horizontal">
 					<ul class="menu">
+						<li><a href="">HOME</a>
+						</li>
 						<li><a href="">clientes</a>
 							<ul>
 								<li><a href="">Cadastrar</a></li>
@@ -76,7 +78,7 @@
 		<section>
 				<br>
 				
-				<br>
+				
 		<div class="form">
 			<form action="#" method="post" onsubmit="return validar_campos(); validarCPF(cpf) class="form">
 				<fieldset>
@@ -84,7 +86,7 @@
 						<table>
 							<tr>
 								<td class="esquerda"><label for="cpf">CPF:</label></td>
-								<td><input type="text" name="cpf" id="cpf" onkeyup="mascaraCPF(this)" size="15" maxlength="14"/></td>
+								<td><input type="text" name="cpf" id="cpf" onkeyup="mascaraCPF(this)" size="15" maxlength="14"  /></td>
 							</tr>
 							
 							<tr>
@@ -92,7 +94,7 @@
 							
 							<tr>
 								<td class="esquerda"><label for="nome">Nome:</label></td>
-								<td><input type="text" name="nome" id="nome" size="15" maxlength="15"/></td>
+								<td><input type="text"  name="nome" id="nome" size="15" maxlength="15"/></td>
 							</tr>
 							
 							<tr>
@@ -107,8 +109,8 @@
 							</tr>
 													
 							<tr>
-								<td class="esquerda"><label for="data_nascimento">Ano de nascimento:</label></td>
-								<td><input type="text" name="data_nasc" id="data_nascimento" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="10"/></td>
+								<td class="esquerda"><label for="data_nascimento">Data de nascimento:</label></td>
+								<td><input type="text"  name="data_nasc" id="data_nascimento" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="10"/></td>
 							</tr>
 							
 							<tr>
@@ -121,7 +123,13 @@
 							
 							<tr>
 								<td class="esquerda"><label for="telefoneR">Tel residencial:</label></td>
-								<td><input type="text" name="telefoneR" id="telefoneR" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+								<td><input type="text"  name="telefoneR" id="telefoneR" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
+							</tr>
+							<tr>
+							</tr>
+							<tr>
+								<td class="esquerda"><label for="email">E-mail:</label></td>
+								<td><input type="text"  name="email" id="email" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="13"/></td>
 							</tr>
 							
 							<tr>
@@ -171,7 +179,7 @@
 							</tr>
 							
 							<tr>
-								<td class="esquerda"><label for="nome">Endereço:</label></td>
+								<td class="esquerda"><label for="end">Endereço:</label></td>
 								<td><input type="text" name="end" id="end" size="15" maxlength="15"/></td>
 								<td>
 								<select name="tipo" id="tipo">
@@ -183,8 +191,8 @@
 									<option value="rua">Rua</option>
 								</select>
 								</td>
-								<td class="esquerda"><label for="Numero">Numero:</label></td>
-								<td><input type="text" name="Numero" id="Numero" size="5" maxlength="5"/></td>
+								<td class="esquerda"><label for="numero">Numero:</label></td>
+								<td><input type="text" name="numero" id="numero" size="5" maxlength="5"/></td>
 							</tr>
 							
 							<tr>
@@ -210,16 +218,16 @@
 							</tr>
 													
 							<tr>
-								<td class="esquerda"><label for="data_nascimento">Bairro:</label></td>
-								<td><input type="text" name="Bairro" id="Bairro"  size="15" maxlength="25"/></td>
+								<td class="esquerda"><label for="bairro">Bairro:</label></td>
+								<td><input type="text" name="bairro" id="bairro"  size="15" maxlength="25"/></td>
 							</tr>
 							
 							<tr>
 							</tr>
 							
 							<tr>
-								<td class="esquerda"><label for="telefone">Cidade:</label></td>
-								<td><input type="text" name="tel" id="telefone" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="25"/></td>
+								<td class="esquerda"><label for="cidade">Cidade:</label></td>
+								<td><input type="text" name="cidade" id="cidade" size="15" onkeypress="mascara(this, '## #####-####') "maxlength="25"/></td>
 								<td class="esquerda">
 								<select name="UF" id="UF">
 									<option value="">Selecione</option>
@@ -278,6 +286,8 @@
 							</tr>
 						</table>
 						</div>
+						
+						
 			</form>
 		</div>
 				
@@ -286,8 +296,10 @@
 		
 		</div>
 		
+		
 			<footer>
-				<p>TODOS OS DIREITOS RESERVADOS</p>
+				<br>
+				<p>&copy; TODOS OS DIREITOS RESERVADOS</p>
 			</footer>
 			
 		

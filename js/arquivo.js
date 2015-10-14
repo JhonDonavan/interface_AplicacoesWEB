@@ -1,5 +1,3 @@
-
-
 function validar_campos()
 {
 	var f = document.forms[0];
@@ -40,14 +38,33 @@ function limpa()
 {
 	var f = document.forms[0];
 	
-	if(((f.nome.value && f.sobrenome.value && f.cpf.value && f.data_nasc.value && f.end.value && f.tel.value) != ' '))
+	if(((f.nome.value || f.sobrenome.value || f.cpf.value || f.data_nasc.value || f.telefoneC.value ||
+	     f.telefoneR.value || f.email.value || f.numero.value || f.complemento.value || f.cep.value || f.cep2.value || 
+		 f.bairro.value || f.cidade.value) != ''))    
 	{
 		f.nome.value = '';
 		f.sobrenome.value = '';
 		f.cpf.value = '';
 		f.data_nasc.value = '';
+		f.telefoneC.value = '';
+		f.telefoneR.value = '';
+		f.email.value = '';
 		f.end.value = '';
-		f.tel.value = '';
+		f.tipo.value ='Tipo';
+		f.numero.value = '';
+		f.complemento.value = '';
+		f.cep.value = '';
+		f.cep2.value = '';
+		f.bairro.value = '';
+		f.cidade.value = '';
+		f.UF.value = 'RJ';
 		f.cpf.focus();
 	}
 }
+
+function verificarDados(){
+	return true;
+}
+
+
+
