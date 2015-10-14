@@ -1,7 +1,8 @@
 *{
 	margin: 0px 0px;
-	padding: 0px 1px;
+	padding: 0px 0px;
 }
+
 hr{
 	border: 1px solid;
 }
@@ -17,7 +18,7 @@ body{
 }
 
 header{
-background-color: #000000; /*#F0F0F0 */
+background-color: #00ffff; /*#F0F0F0 */
 width: 100%;
 height: 40px;
 margin: 0px 0px;
@@ -28,6 +29,50 @@ border-radius: 3px;
 border-bottom: 2px solid black;
 position: fixed;
 }
+.menu{
+	margin-left: 230px;
+	margin-top: -27px;
+	text-transform: uppercase;
+	}
+.menu li{
+position:relative;
+float:left;
+border-right:1px solid #c0c0c0;
+list-style: none!important;
+}
+/*ESCONDER O SUB MENU */
+.menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+list-style: none!important;
+
+}  
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+ 
+.menu li a:hover{
+background:silver;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+/* FAZER O SUB MENU APARECER */
+.menu li:hover ul, .menu li.over ul{display:block;}
+ /*AJUSTE FINAIS PARA FUNCIONAR 100%  O SUBMENU */
+ 
+ .menu li ul li{
+border:1px solid #c0c0c0;
+display:block;
+width:150px;
+list-style: none!important;
+
+}
+
 .corpo{
 }
 /*aside{
@@ -87,7 +132,7 @@ h1{
 	text-align: left;
 	text-transform: uppercase;
 	position:;
-	margin-top: 3px;
+	margin-top: 8px;
 	
 	}
 h2{
@@ -95,7 +140,7 @@ h2{
 	font-weight: bolder;
 	text-align: center;
 }
-
+/*
 ul{
 	margin: 18px 0 0 0 ;
 	position: relative;
@@ -119,6 +164,7 @@ ul.inline li{
 	display: inline-block;
 	padding: 4px;
 	border-radius: 10px;
+
 	
 }
 nav .ul-horizontal{
@@ -126,7 +172,8 @@ nav .ul-horizontal{
 	margin-right; 10px;
 	margin-left: auto;
 	margin-top: -30px;
-margin-left: 270px;	
+	margin-left: 270px;
+	
 }
 a{
 	text-decoration: none;
@@ -136,6 +183,7 @@ a:hover{
 	text-decoration: underline;
 	color: #000000;
 }
+*/
 .botoes{
 	text-align:center;
 }

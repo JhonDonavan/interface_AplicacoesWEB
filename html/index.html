@@ -15,14 +15,42 @@
 			<div class="logo">
 			<h1>nome sistema</h1>
 			</div>
-			<nav class="navegacao-horizontal">
+			<nav>
 				<div class="ul-horizontal">
-					<ul class="inline sem-marcador">
-						<li><a href="">clientes</a></li>
-						<li><a href="">fornecedores</a></li>
-						<li><a href="">produtos</a></li>
-						<li><a href="">funcionarios</a></li>
-						<li><a href="">pagamentos</a></li>
+					<ul class="menu">
+						<li><a href="">clientes</a>
+							<ul>
+								<li><a href="">Cadastrar</a></li>
+								<li><a href="">Consultar</a></li>
+								<li><a href="">Alterar</a></li>
+							</ul>
+						</li>
+						<li><a href="">fornecedores</a>
+							<ul>
+								<li><a href="">Cadastrar</a></li>
+								<li><a href="">Consultar</a></li>
+								<li><a href="">Alterar</a></li>
+							</ul>
+						</li>
+						<li><a href="">produtos</a>
+							<ul>
+								<li><a href="">Cadastrar</a></li>
+								<li><a href="">Consultar</a></li>
+								<li><a href="">Alterar</a></li>
+							</ul>
+						</li>
+						<li><a href="">funcionários</a>
+							<ul>
+								<li><a href="">Cadastrar</a></li>
+								<li><a href="">Consultar</a></li>
+								<li><a href="">Alterar</a></li>
+							</ul>
+							</li>
+						<li><a href="">pagamentos</a>
+							<ul>
+								<li><a href="Consultar">relatorio</a></li>
+							</ul>
+						</li>
 						<li><a href="">sair</a></li>
 					</ul>
 				</div>
@@ -168,14 +196,14 @@
 							</tr>-->
 							
 							<tr>
-								<td class="esquerda"><label for="cep">CEP:</label></td>
-								<td><input type="text" name="cep" id="cep" size="5" maxlength="5"> - <input type="text" name="cep2" id="cep2" size="3" maxlength="3"></td>
-							</tr>
-							
-							<tr>
 								<td class="esquerda"><label for="complemento">Complemento:</label></td>
 								<td><input type="text" name="complemento" id="complemento" size="15" maxlength="60"/></td>
 								
+							</tr>
+							
+							<tr>
+								<td class="esquerda"><label for="cep">CEP:</label></td>
+								<td><input type="text" name="cep" id="cep" size="5" maxlength="5"> - <input type="text" name="cep2" id="cep2" size="3" maxlength="3"></td>
 							</tr>
 							
 							<tr>
@@ -183,7 +211,7 @@
 													
 							<tr>
 								<td class="esquerda"><label for="data_nascimento">Bairro:</label></td>
-								<td><input type="text" name="Bairro" id="Bairro" onkeypress="mascara(this, '##/##/####')" size="15" maxlength="25"/></td>
+								<td><input type="text" name="Bairro" id="Bairro"  size="15" maxlength="25"/></td>
 							</tr>
 							
 							<tr>
